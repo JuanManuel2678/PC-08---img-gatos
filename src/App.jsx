@@ -2,10 +2,12 @@ import { Buttom } from "./Components/Buttom";
 import { Header } from "./Components/Header";
 import { Main } from "./Components/Main";
 import { useData } from "./Hook/useData";
+import { useImage } from "./Hook/useImage";
 
 function App() {
- 
-  const {catImage, fact, textCat } = useData()
+  
+  const { fact, textCat } = useData()
+  const { catImage } = useImage({ fact })
 
   return (
     <>
